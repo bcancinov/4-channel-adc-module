@@ -1,0 +1,17 @@
+LTspice 24.1.5 for Windows
+Circuit: G:\My Drive\ccd_controller\adc_board_prot\sim\N15VA\n15va.net
+Start Time: Wed Mar 26 18:22:44 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = trap
+Coc2: Increased Cpar to 1.284e-11
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 85.399 seconds.
+
+Files loaded:
+G:\My Drive\ccd_controller\adc_board_prot\sim\N15VA\n15va.net
+C:\Users\BraxC\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\BraxC\AppData\Local\LTspice\lib\sub\LT3579.sub
+
