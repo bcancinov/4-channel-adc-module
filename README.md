@@ -2,12 +2,13 @@
 
 **Version 0.1** – Prototype for revision and discussion
 
-This repository contains the schematic design for a **4 Channel ADC Module** developed in KiCad EDA version 9.0.0..
+This repository contains the schematic design for a **4 Channel ADC Module** developed in KiCad EDA version 9.0.0 citeturn0file0.
 
 ## Overview
 
 The 4 Channel ADC Module is designed by NOIRLab to provide high-precision analog-to-digital conversion for scientific instrumentation. It features:
 - Board dimensions: 146 × 139 mm; six-layer PCB with impedance control
+- Simulation files in `sim/` folder: LTSpice schematics and LTPowerCAD models for the DC‑DC converter stages
 
 
 - Daughter PCB module of Tren Electronic TE0720-04-62I33MA SoC module with AMD Zynq™ 7020-2I, 1 GByte DDR3L, and 8 GByte eMMC
