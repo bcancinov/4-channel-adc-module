@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "d1b48cf1-0aff-4d72-9936-e4f2f187716d")
 	(paper "A4")
+	(title_block
+		(title "4 channel ADC Module")
+		(date "2025-04-18")
+		(rev "0.1")
+		(company "NOIRLab")
+		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
+	)
 	(lib_symbols)
 	(sheet
 		(at 140.97 33.02)

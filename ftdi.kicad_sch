@@ -4,6 +4,13 @@
 	(generator_version "9.0")
 	(uuid "2d61d014-cd28-43ba-8a63-03ff99fb776e")
 	(paper "A4")
+	(title_block
+		(title "4 channel ADC Module")
+		(date "2025-04-18")
+		(rev "0.1")
+		(company "NOIRLab")
+		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
+	)
 	(lib_symbols
 		(symbol "Device:C_Small"
 			(pin_numbers
@@ -3236,6 +3243,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "USB-C Receptacle"
+		(exclude_from_sim no)
+		(at 39.116 126.238 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5f18a287-65ce-4453-9224-bd0e033381f4")
+	)
 	(junction
 		(at 199.39 30.48)
 		(diameter 0)
@@ -5696,7 +5713,7 @@
 			(fill
 				(type none)
 			)
-			(uuid d350bb6c-11c4-4520-8403-bf235e1e0637)
+			(uuid 325f6ef0-fa83-43c1-923b-89244ee5acc8)
 		)
 	)
 	(netclass_flag ""
