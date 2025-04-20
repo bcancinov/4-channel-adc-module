@@ -2245,12 +2245,6 @@
 		(uuid "6f2246b6-600b-4ed4-a405-9ea7298f33e6")
 	)
 	(junction
-		(at 60.96 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "87c97e48-8823-4a0d-8b2f-bb84d4ef61fe")
-	)
-	(junction
 		(at 88.9 128.27)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2303,12 +2297,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb3ba53f-9fc0-4d1f-b5e6-6267a8d6d47e")
-	)
-	(junction
-		(at 60.96 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d2500970-50cc-434e-aece-4e5dfd2e23d2")
 	)
 	(junction
 		(at 88.9 120.65)
@@ -2476,7 +2464,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 80.01) (xy 69.85 80.01)
+			(xy 59.69 80.01) (xy 69.85 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2626,16 +2614,6 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 72.39) (xy 60.96 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29d0f0bb-334c-4c63-bfde-2f6bacba610d")
-	)
-	(wire
-		(pts
 			(xy 133.35 78.74) (xy 133.35 80.01)
 		)
 		(stroke
@@ -2643,16 +2621,6 @@
 			(type default)
 		)
 		(uuid "2b7a9c83-3196-45e7-a7b3-9fb064eaece1")
-	)
-	(wire
-		(pts
-			(xy 54.61 80.01) (xy 60.96 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f0ad997-76f4-4ef7-91d2-ab0c93c5fe31")
 	)
 	(wire
 		(pts
@@ -2793,16 +2761,6 @@
 			(type default)
 		)
 		(uuid "47b65a19-0226-428f-a433-1f748fa192b9")
-	)
-	(wire
-		(pts
-			(xy 60.96 80.01) (xy 60.96 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "509ab825-f37d-41bd-8c9f-0831425591c2")
 	)
 	(wire
 		(pts
@@ -3016,7 +2974,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 72.39) (xy 69.85 72.39)
+			(xy 59.69 72.39) (xy 69.85 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3303,16 +3261,6 @@
 			(type default)
 		)
 		(uuid "bb0ad9be-1678-49ba-ae9b-c7bf6e93b44a")
-	)
-	(wire
-		(pts
-			(xy 60.96 71.12) (xy 60.96 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd3a5691-817a-4a01-8b3f-e27ca121d21b")
 	)
 	(wire
 		(pts
@@ -3936,7 +3884,7 @@
 	)
 	(hierarchical_label "IN+"
 		(shape input)
-		(at 54.61 80.01 180)
+		(at 59.69 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3991,7 +3939,7 @@
 	)
 	(hierarchical_label "IN-"
 		(shape input)
-		(at 54.61 72.39 180)
+		(at 59.69 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4089,7 +4037,7 @@
 			(fill
 				(type none)
 			)
-			(uuid e917c09f-717f-4c6f-af88-6ffeacc77d7d)
+			(uuid 22ba818e-ea1a-4e34-a247-14dbc22bc905)
 		)
 	)
 	(netclass_flag ""
@@ -4592,83 +4540,6 @@
 				)
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/e760b459-ef78-4f70-8b5b-f40614ffdb26"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 60.96 66.04 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1baa28ab-bc1f-4483-a22f-8118146727a9")
-		(property "Reference" "#PWR0245"
-			(at 60.96 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.754 62.738 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf96dce1-8737-4628-9ebd-ce6e6c13895c")
-		)
-		(instances
-			(project "adc_board_prot"
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/151021a0-59df-41fb-9dca-8cf2c308dcb3"
-					(reference "#PWR0248")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/1dd46193-aca2-49d1-a9b1-dd7bd2904081"
-					(reference "#PWR0247")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/a97c18fb-4468-40a7-a381-0ab6fc38a1d2"
-					(reference "#PWR0246")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/e760b459-ef78-4f70-8b5b-f40614ffdb26"
-					(reference "#PWR0245")
 					(unit 1)
 				)
 			)
@@ -5926,106 +5797,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 60.96 68.58 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "5c5a47a9-66ff-4011-b9e9-f1bf363bd222")
-		(property "Reference" "R118"
-			(at 59.69 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 59.69 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 60.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 60.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "M" "VISHAY"
-			(at 60.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW0603100KFKEA"
-			(at 60.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ef0ff82b-5418-4ca9-9720-d2454b854759")
-		)
-		(pin "1"
-			(uuid "59aa16b0-7be1-4e9d-a250-0fcfbf799783")
-		)
-		(instances
-			(project "adc_board_prot"
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/151021a0-59df-41fb-9dca-8cf2c308dcb3"
-					(reference "R121")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/1dd46193-aca2-49d1-a9b1-dd7bd2904081"
-					(reference "R120")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/a97c18fb-4468-40a7-a381-0ab6fc38a1d2"
-					(reference "R119")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/e760b459-ef78-4f70-8b5b-f40614ffdb26"
-					(reference "R118")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 83.82 105.41 0)
 		(mirror y)
@@ -7171,83 +6942,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 60.96 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "abcd4b11-4f49-462d-acd1-655260042eb0")
-		(property "Reference" "#PWR0238"
-			(at 60.96 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 58.166 89.662 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 60.96 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "49dec9c4-dd37-4887-a569-cdf5e4f4863f")
-		)
-		(instances
-			(project "adc_board_prot"
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/151021a0-59df-41fb-9dca-8cf2c308dcb3"
-					(reference "#PWR0244")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/1dd46193-aca2-49d1-a9b1-dd7bd2904081"
-					(reference "#PWR0243")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/a97c18fb-4468-40a7-a381-0ab6fc38a1d2"
-					(reference "#PWR0239")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/e760b459-ef78-4f70-8b5b-f40614ffdb26"
-					(reference "#PWR0238")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 82.55 76.2 90)
 		(unit 1)
@@ -8186,106 +7880,6 @@
 				)
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/e760b459-ef78-4f70-8b5b-f40614ffdb26"
 					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 60.96 83.82 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp yes)
-		(uuid "f66773ef-10e6-4a6d-87e8-b22b4dcbb3ce")
-		(property "Reference" "R122"
-			(at 59.69 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 59.69 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 60.96 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 60.96 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
-			(at 60.96 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "M" "VISHAY"
-			(at 60.96 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW0603100KFKEA"
-			(at 60.96 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "931b5f76-90e5-43a0-ac7b-0c429342ef8a")
-		)
-		(pin "1"
-			(uuid "cd5a4f42-4df5-4949-8bd9-e8bfb0e5275c")
-		)
-		(instances
-			(project "adc_board_prot"
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/151021a0-59df-41fb-9dca-8cf2c308dcb3"
-					(reference "R125")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/1dd46193-aca2-49d1-a9b1-dd7bd2904081"
-					(reference "R124")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/a97c18fb-4468-40a7-a381-0ab6fc38a1d2"
-					(reference "R123")
-					(unit 1)
-				)
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/890492eb-88be-4b6b-bbf9-87ecd79c941c/e760b459-ef78-4f70-8b5b-f40614ffdb26"
-					(reference "R122")
 					(unit 1)
 				)
 			)

@@ -1096,6 +1096,16 @@
 		)
 		(uuid "1455b061-d5c6-4e34-a4ce-f3bf8d5478f6")
 	)
+	(text "MRCC: Multi-Region Clock Capable"
+		(exclude_from_sim no)
+		(at 152.908 90.424 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6ec258d4-053c-4a41-9f0c-bad72577377a")
+	)
 	(text "Backplane"
 		(exclude_from_sim no)
 		(at 203.708 69.088 0)
@@ -3678,7 +3688,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
-					(page "17")
+					(page "22")
 				)
 			)
 		)
@@ -3720,7 +3730,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
-					(page "16")
+					(page "21")
 				)
 			)
 		)
@@ -3762,7 +3772,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
-					(page "5")
+					(page "20")
 				)
 			)
 		)
