@@ -586,6 +586,24 @@
       "/FTDI/DL-": [
         "USB"
       ],
+      "/clock_gen/FB": [
+        "LVDS"
+      ],
+      "/clock_gen/FB+": [
+        "LVDS"
+      ],
+      "/clock_gen/FB-": [
+        "LVDS"
+      ],
+      "/clock_gen/FBb": [
+        "LVDS"
+      ],
+      "B34_L13+": [
+        "LVDS"
+      ],
+      "B34_L13-": [
+        "LVDS"
+      ],
       "CLK0+": [
         "LVDS"
       ],
@@ -854,8 +872,24 @@
       "Root"
     ],
     [
-      "e760b459-ef78-4f70-8b5b-f40614ffdb26",
-      "adc_1"
+      "ee326142-a1ab-40dd-8d19-bfec08848fdc",
+      "connectors"
+    ],
+    [
+      "a8df10c2-2438-4d16-8f31-8fbd83880e34",
+      "b2b_jb1"
+    ],
+    [
+      "581c055b-9176-4878-9dfb-922067a56523",
+      "b2b_jb2"
+    ],
+    [
+      "45f0a0f8-850f-42cf-978a-117b962875a8",
+      "b2b_jb3"
+    ],
+    [
+      "d7806a90-a674-421b-b806-2535dd334654",
+      "clock_gen"
     ],
     [
       "b2ebe4a4-a629-4e1d-afd3-992e4c8a5e84",
@@ -866,8 +900,28 @@
       "ethernet"
     ],
     [
-      "a8df10c2-2438-4d16-8f31-8fbd83880e34",
-      "b2b_jb1"
+      "890492eb-88be-4b6b-bbf9-87ecd79c941c",
+      "converters"
+    ],
+    [
+      "e760b459-ef78-4f70-8b5b-f40614ffdb26",
+      "adc_0"
+    ],
+    [
+      "a97c18fb-4468-40a7-a381-0ab6fc38a1d2",
+      "adc_1"
+    ],
+    [
+      "1dd46193-aca2-49d1-a9b1-dd7bd2904081",
+      "adc_2"
+    ],
+    [
+      "151021a0-59df-41fb-9dca-8cf2c308dcb3",
+      "adc_3"
+    ],
+    [
+      "fb636b71-96c5-455c-b13e-214061b8d67f",
+      "misc"
     ],
     [
       "27f874fd-a513-46bc-8f3a-9358794e114f",
@@ -876,10 +930,6 @@
     [
       "64812f56-e118-4c16-90e7-a9df7ce0aca3",
       "12VIN"
-    ],
-    [
-      "3ef669a6-8784-46cc-88a6-73e9c95cd39e",
-      "3V3D"
     ],
     [
       "cf5edaa6-938f-44f3-a036-5579ffe5180c",
@@ -906,36 +956,12 @@
       "2V5D"
     ],
     [
+      "3ef669a6-8784-46cc-88a6-73e9c95cd39e",
+      "3V3D"
+    ],
+    [
       "2e7609ae-89ed-42bb-b44a-acd5aef22fe0",
       "4V2A"
-    ],
-    [
-      "581c055b-9176-4878-9dfb-922067a56523",
-      "b2b_jb2"
-    ],
-    [
-      "45f0a0f8-850f-42cf-978a-117b962875a8",
-      "b2b_jb3"
-    ],
-    [
-      "890492eb-88be-4b6b-bbf9-87ecd79c941c",
-      "converters"
-    ],
-    [
-      "a97c18fb-4468-40a7-a381-0ab6fc38a1d2",
-      "adc_3"
-    ],
-    [
-      "1dd46193-aca2-49d1-a9b1-dd7bd2904081",
-      "adc_2"
-    ],
-    [
-      "151021a0-59df-41fb-9dca-8cf2c308dcb3",
-      "adc_0"
-    ],
-    [
-      "ee326142-a1ab-40dd-8d19-bfec08848fdc",
-      "connectors"
     ]
   ],
   "text_variables": {}

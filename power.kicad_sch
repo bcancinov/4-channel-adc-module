@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-04-18")
+		(date "2025-05-06")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -49,7 +49,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "8")
+					(page "18")
 				)
 			)
 		)
@@ -91,7 +91,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "13")
+					(page "24")
 				)
 			)
 		)
@@ -133,7 +133,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "6")
+					(page "23")
 				)
 			)
 		)
@@ -175,7 +175,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "11")
+					(page "21")
 				)
 			)
 		)
@@ -217,7 +217,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "5")
+					(page "16")
 				)
 			)
 		)
@@ -259,7 +259,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "10")
+					(page "20")
 				)
 			)
 		)
@@ -301,7 +301,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "12")
+					(page "22")
 				)
 			)
 		)
@@ -343,7 +343,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "7")
+					(page "17")
 				)
 			)
 		)
@@ -385,7 +385,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/27f874fd-a513-46bc-8f3a-9358794e114f"
-					(page "9")
+					(page "19")
 				)
 			)
 		)

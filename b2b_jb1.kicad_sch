@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-04-18")
+		(date "2025-05-06")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -2735,6 +2735,12 @@
 		(uuid "b6fce82e-3731-4cfc-9a16-831613276ed2")
 	)
 	(junction
+		(at 83.82 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9e03747-f620-4421-930b-8536867cf2d8")
+	)
+	(junction
 		(at 85.09 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2815,10 +2821,6 @@
 	(no_connect
 		(at 111.76 50.8)
 		(uuid "5a594d3d-09ef-4529-9556-ee23ebc94792")
-	)
-	(no_connect
-		(at 111.76 76.2)
-		(uuid "65c7b409-768b-48a5-a86c-27af01efb06c")
 	)
 	(no_connect
 		(at 111.76 55.88)
@@ -2925,6 +2927,16 @@
 			(type default)
 		)
 		(uuid "0d1bfa97-4314-4eb7-ae81-9eab01471b2d")
+	)
+	(wire
+		(pts
+			(xy 68.58 144.78) (xy 73.66 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f97a521-54f7-4254-a86f-9d3eb0aec6bb")
 	)
 	(wire
 		(pts
@@ -3038,6 +3050,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 147.32) (xy 73.66 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5171a5c5-2853-4607-a448-31daf673c518")
+	)
+	(wire
+		(pts
 			(xy 67.31 166.37) (xy 85.09 166.37)
 		)
 		(stroke
@@ -3078,6 +3100,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 147.32) (xy 83.82 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "686480bf-7b37-4239-8b07-18423e081817")
+	)
+	(wire
+		(pts
 			(xy 110.49 38.1) (xy 110.49 40.64)
 		)
 		(stroke
@@ -3085,6 +3117,16 @@
 			(type default)
 		)
 		(uuid "69289ff9-f1fe-45b2-b790-0affbe98e1eb")
+	)
+	(wire
+		(pts
+			(xy 78.74 144.78) (xy 83.82 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d3bca75-e8ab-4d66-9aee-6174347e0eed")
 	)
 	(wire
 		(pts
@@ -3215,6 +3257,16 @@
 			(type default)
 		)
 		(uuid "dfec1cd1-8f82-447a-9c95-11aac7591ed9")
+	)
+	(wire
+		(pts
+			(xy 78.74 147.32) (xy 83.82 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e73e90f3-79ee-4dde-94b1-19da9b5993ee")
 	)
 	(wire
 		(pts
@@ -3483,6 +3535,28 @@
 		(uuid "4e18709b-7f18-42a9-90d0-fc5db7cd0ed7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 90.1254 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SDA"
+		(shape bidirectional)
+		(at 68.58 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "520eaa01-6662-4b50-af2b-37f2bf324ca0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 60.9154 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3818,6 +3892,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCL"
+		(shape output)
+		(at 68.58 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bd54fe85-d19e-43fa-be74-097959393f1c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.0872 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -5701,6 +5797,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 76.2 144.78 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e61a5c8-7376-48b2-9f47-ca92669e8792")
+		(property "Reference" "R118"
+			(at 74.168 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 78.486 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "VISHAY"
+			(at 76.2 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW060310K0FKEA"
+			(at 76.2 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d347eef8-1513-4a0c-a693-0ff173135d4c")
+		)
+		(pin "2"
+			(uuid "6040b1f8-1672-46f2-b30d-0c54fbd48247")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/a8df10c2-2438-4d16-8f31-8fbd83880e34"
+					(reference "R118")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 185.42 132.08 90)
 		(unit 1)
@@ -6095,6 +6279,94 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 76.2 147.32 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e5ac77e-04b5-4acf-bcec-cf7569568086")
+		(property "Reference" "R119"
+			(at 74.168 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10K"
+			(at 78.486 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 76.2 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Automotive AEC-Q200 Thick Film"
+			(at 76.2 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "VISHAY"
+			(at 76.2 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CRCW060310K0FKEA"
+			(at 76.2 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93566dd5-b2f5-4a07-9e76-7f5c91406476")
+		)
+		(pin "2"
+			(uuid "308d5a6b-2471-41e9-bf01-763857a3c473")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/a8df10c2-2438-4d16-8f31-8fbd83880e34"
+					(reference "R119")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 185.42 106.68 90)
 		(unit 1)
@@ -6308,6 +6580,71 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/a8df10c2-2438-4d16-8f31-8fbd83880e34"
 					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 83.82 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b06201e3-4254-4d4b-a41f-d6c740d68be8")
+		(property "Reference" "#PWR0246"
+			(at 83.82 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3D"
+			(at 87.122 141.478 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 83.82 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3900731e-94e7-4207-a84e-8269a12a4001")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/a8df10c2-2438-4d16-8f31-8fbd83880e34"
+					(reference "#PWR0246")
 					(unit 1)
 				)
 			)
@@ -6681,6 +7018,71 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/a8df10c2-2438-4d16-8f31-8fbd83880e34"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 111.76 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dde689c0-3aaf-4e06-a87b-48879d3d906e")
+		(property "Reference" "#PWR0245"
+			(at 115.57 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "1V8D"
+			(at 106.68 76.2 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 111.76 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 111.76 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 111.76 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3809fce1-81e7-45c7-8f22-ff0dce760c4f")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/a8df10c2-2438-4d16-8f31-8fbd83880e34"
+					(reference "#PWR0245")
 					(unit 1)
 				)
 			)

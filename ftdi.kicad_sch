@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-04-18")
+		(date "2025-05-06")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -4511,16 +4511,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 39.37) (xy 234.95 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8176474c-fc6d-420f-99c0-771828c03ca2")
-	)
-	(wire
-		(pts
 			(xy 35.56 158.75) (xy 53.34 158.75)
 		)
 		(stroke
@@ -5713,7 +5703,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 439300b3-01ee-4c01-955f-cd72cc4d3e63)
+			(uuid 9d34260e-45c6-4b1a-a918-c2f4b15aabcf)
 		)
 	)
 	(netclass_flag ""
@@ -6867,7 +6857,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 234.95 39.37 0)
+		(at 234.95 38.1 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6876,7 +6866,7 @@
 		(dnp no)
 		(uuid "4a0d4073-b584-4c3e-9f64-221f27eb90d4")
 		(property "Reference" "#PWR035"
-			(at 234.95 35.56 0)
+			(at 231.14 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6885,7 +6875,7 @@
 			)
 		)
 		(property "Value" "3V3D"
-			(at 238.506 42.418 0)
+			(at 240.538 38.1 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6893,7 +6883,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 234.95 39.37 0)
+			(at 234.95 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6902,7 +6892,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 39.37 0)
+			(at 234.95 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6911,7 +6901,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 234.95 39.37 0)
+			(at 234.95 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)

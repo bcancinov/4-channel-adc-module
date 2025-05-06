@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-04-18")
+		(date "2025-05-06")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -49,7 +49,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5"
-					(page "4")
+					(page "15")
 				)
 			)
 		)
@@ -91,7 +91,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5"
-					(page "3")
+					(page "8")
 				)
 			)
 		)
@@ -133,7 +133,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5"
-					(page "14")
+					(page "9")
 				)
 			)
 		)
@@ -175,7 +175,49 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5"
-					(page "2")
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 80.01 53.34)
+		(size 16.51 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d7806a90-a674-421b-b806-2535dd334654")
+		(property "Sheetname" "clock_gen"
+			(at 80.01 52.6284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "clock_gen.kicad_sch"
+			(at 80.01 65.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5"
+					(page "6")
 				)
 			)
 		)
@@ -217,7 +259,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5"
-					(page "19")
+					(page "2")
 				)
 			)
 		)
@@ -259,7 +301,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5"
-					(page "23")
+					(page "14")
 				)
 			)
 		)

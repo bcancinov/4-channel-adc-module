@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-04-18")
+		(date "2025-05-06")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -859,6 +859,137 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "lib:uni_tvs"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0.508 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "uni_tvs_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.016) (xy -0.762 -1.016) (xy -0.254 -1.524)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 1.016) (xy -0.762 0) (xy 0.762 -1.016) (xy 0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0) (xy -0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "uni_tvs_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power)
 			(pin_numbers
@@ -1096,16 +1227,6 @@
 		)
 		(uuid "1455b061-d5c6-4e34-a4ce-f3bf8d5478f6")
 	)
-	(text "MRCC: Multi-Region Clock Capable"
-		(exclude_from_sim no)
-		(at 152.908 90.424 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "6ec258d4-053c-4a41-9f0c-bad72577377a")
-	)
 	(text "Backplane"
 		(exclude_from_sim no)
 		(at 203.708 69.088 0)
@@ -1128,6 +1249,48 @@
 		(color 0 0 0 0)
 		(uuid "59b12209-1e5b-41b2-8aaf-7f2690fc3dbe")
 	)
+	(junction
+		(at 148.59 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ccabace-a555-4ade-b222-a128e3a4a268")
+	)
+	(junction
+		(at 148.59 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91e81f2c-bfc6-4c2b-a7a9-9f8c882930b3")
+	)
+	(junction
+		(at 148.59 99.06)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9c333efc-eefd-4ce3-bcdd-fe301bb3d78c")
+	)
+	(junction
+		(at 148.59 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c65a2a77-356c-44b5-9c2b-508f5523cfa6")
+	)
+	(junction
+		(at 148.59 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cbabc853-07e1-48a3-91f2-cd2e98008ea7")
+	)
+	(junction
+		(at 148.59 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc065ae8-2a88-4409-9701-f674b8f25729")
+	)
+	(junction
+		(at 204.47 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2963480-bd25-4622-bd4f-edc4ace4b531")
+	)
 	(wire
 		(pts
 			(xy 189.23 104.14) (xy 184.15 104.14)
@@ -1137,26 +1300,6 @@
 			(type default)
 		)
 		(uuid "05f85217-c155-4d03-997e-d4cf30287f07")
-	)
-	(wire
-		(pts
-			(xy 194.31 91.44) (xy 204.47 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "10decf19-6121-4906-b1a2-8cab95053e6a")
-	)
-	(wire
-		(pts
-			(xy 189.23 91.44) (xy 184.15 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18ced67d-ee27-4d0f-9a61-6dc2cc0b3a95")
 	)
 	(wire
 		(pts
@@ -1170,16 +1313,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 111.76) (xy 184.15 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "330f7286-85ce-4e2e-9561-b89ae82432cd")
-	)
-	(wire
-		(pts
 			(xy 194.31 96.52) (xy 204.47 96.52)
 		)
 		(stroke
@@ -1190,13 +1323,33 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 106.68) (xy 148.59 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42adf857-2a9f-4487-84f0-8979a804d1b3")
+	)
+	(wire
+		(pts
+			(xy 148.59 99.06) (xy 151.13 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4fce3e11-7a81-4c9f-ab0e-d9218c9ee14a")
+	)
+	(wire
+		(pts
 			(xy 194.31 88.9) (xy 204.47 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "648b0219-c5ee-4f41-bdf1-21d1aacf5b73")
+		(uuid "5dc75630-2a99-4bd2-b5d0-6c14aac666e0")
 	)
 	(wire
 		(pts
@@ -1210,6 +1363,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 96.52) (xy 151.13 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bf6fdaf-02cf-41b5-b491-331d16fc0124")
+	)
+	(wire
+		(pts
 			(xy 189.23 106.68) (xy 184.15 106.68)
 		)
 		(stroke
@@ -1220,6 +1383,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 88.9) (xy 189.23 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dbe0562-acec-4926-99c7-0d9d6062b761")
+	)
+	(wire
+		(pts
 			(xy 189.23 114.3) (xy 184.15 114.3)
 		)
 		(stroke
@@ -1227,6 +1400,16 @@
 			(type default)
 		)
 		(uuid "7cb48b9a-ccf2-4824-a261-811fdb6a390a")
+	)
+	(wire
+		(pts
+			(xy 148.59 104.14) (xy 151.13 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f89e7f9-fddf-4a04-b473-b4fc2000f439")
 	)
 	(wire
 		(pts
@@ -1250,6 +1433,26 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 114.3) (xy 151.13 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c75cae9-45c6-40ea-9939-1690e6ff983e")
+	)
+	(wire
+		(pts
+			(xy 194.31 91.44) (xy 204.47 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "965eaa5f-4b79-41d3-ab03-2df21bc51da6")
+	)
+	(wire
+		(pts
 			(xy 189.23 99.06) (xy 184.15 99.06)
 		)
 		(stroke
@@ -1270,6 +1473,36 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 88.9) (xy 148.59 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a82cd1ba-6c91-420b-a8b3-31139b0ea2d8")
+	)
+	(wire
+		(pts
+			(xy 148.59 91.44) (xy 148.59 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeaf988c-6c33-4880-9a40-31fb9c8391d2")
+	)
+	(wire
+		(pts
+			(xy 148.59 99.06) (xy 148.59 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b874c637-19cd-425b-aa27-eb855b199ce0")
+	)
+	(wire
+		(pts
 			(xy 194.31 99.06) (xy 204.47 99.06)
 		)
 		(stroke
@@ -1280,23 +1513,43 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 111.76) (xy 204.47 111.76)
+			(xy 204.47 109.22) (xy 204.47 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c27d7ed5-29b6-48f9-acab-5eaefea686a0")
+		(uuid "c614657a-5248-4e99-9a67-71ea56273ecb")
 	)
 	(wire
 		(pts
-			(xy 189.23 88.9) (xy 184.15 88.9)
+			(xy 148.59 91.44) (xy 151.13 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c97b8691-25fb-4e3b-8349-c10b22c01251")
+		(uuid "c85ddb67-e968-4f7f-9438-14f204e630aa")
+	)
+	(wire
+		(pts
+			(xy 148.59 106.68) (xy 151.13 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9878864-9f11-4091-8d49-f1dc8d626e10")
+	)
+	(wire
+		(pts
+			(xy 147.32 114.3) (xy 148.59 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf00f207-c0ab-490d-931d-e476e54f9d5a")
 	)
 	(wire
 		(pts
@@ -1310,6 +1563,16 @@
 	)
 	(wire
 		(pts
+			(xy 151.13 88.9) (xy 148.59 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d59cd6ea-a84c-4d2c-8634-41616aa3a2cd")
+	)
+	(wire
+		(pts
 			(xy 189.23 96.52) (xy 184.15 96.52)
 		)
 		(stroke
@@ -1320,6 +1583,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 96.52) (xy 148.59 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcd473f3-a8b0-4961-b3cb-b4d6a279999f")
+	)
+	(wire
+		(pts
 			(xy 194.31 104.14) (xy 204.47 104.14)
 		)
 		(stroke
@@ -1327,6 +1600,16 @@
 			(type default)
 		)
 		(uuid "df4392d9-b673-4053-993d-fe0a7259ee89")
+	)
+	(wire
+		(pts
+			(xy 184.15 91.44) (xy 189.23 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec2fd4af-73ee-47a8-90bb-93ac8a9c47df")
 	)
 	(wire
 		(pts
@@ -1348,7 +1631,17 @@
 		)
 		(uuid "f79ddc46-9d3e-4993-9b6f-f2aba4fdb5dc")
 	)
-	(label "BPIO3"
+	(wire
+		(pts
+			(xy 148.59 104.14) (xy 148.59 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fae43678-066d-412a-b6f2-7a619c507039")
+	)
+	(label "BPIO2"
 		(at 204.47 99.06 180)
 		(effects
 			(font
@@ -1356,39 +1649,9 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2a19bf89-48b5-43e7-a50f-16091dfd4e65")
+		(uuid "11ad66cd-7d2a-4f5c-935f-e3e30a82c598")
 	)
-	(label "BPIO0"
-		(at 204.47 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4a6b3200-9605-40cd-810b-ce5230171ff5")
-	)
-	(label "BPIO5"
-		(at 204.47 106.68 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7a3f7a8f-dcd6-47e1-89cf-760738dc888a")
-	)
-	(label "BPIO7"
-		(at 204.47 114.3 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "99346951-008c-41d4-a3b4-de5be996253b")
-	)
-	(label "BPIO1"
+	(label "BPIO4"
 		(at 204.47 91.44 180)
 		(effects
 			(font
@@ -1396,29 +1659,29 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "aa73d254-2ec7-4a8f-b7c9-81d4133d7c18")
+		(uuid "73fb8cb9-ee6d-4fe1-a9c3-d721fe65eed7")
 	)
-	(label "BPIO6"
-		(at 204.47 111.76 180)
+	(label "BPIO5"
+		(at 204.47 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "ab95a2ab-3d5a-47f7-b3e5-e5e244868a1d")
+		(uuid "78ba86a9-566f-453d-84e4-4a9c94f32179")
 	)
-	(label "BPIO2"
-		(at 204.47 96.52 180)
+	(label "BPIO0"
+		(at 204.47 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "cdd135cd-65dc-49cd-967a-39e2e96f06d5")
+		(uuid "c0ef3c05-e95e-4081-bc3c-cc524a66e44b")
 	)
-	(label "BPIO4"
+	(label "BPIO1"
 		(at 204.47 104.14 180)
 		(effects
 			(font
@@ -1426,7 +1689,17 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "ef6649ef-5512-498f-a3bc-365fe9e26e6d")
+		(uuid "d0e081cf-5252-46c1-959f-beb660df3527")
+	)
+	(label "BPIO3"
+		(at 204.47 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e4603e7f-e22e-4f2e-a750-10929937e65f")
 	)
 	(global_label "IN2+"
 		(shape output)
@@ -1450,31 +1723,9 @@
 			)
 		)
 	)
-	(global_label "B34_L13-"
-		(shape bidirectional)
-		(at 184.15 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "08cc018c-76c9-4fcf-9390-62b91ca5b144")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3774 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "B34_L15-"
 		(shape bidirectional)
-		(at 184.15 106.68 180)
+		(at 184.15 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1484,7 +1735,7 @@
 		)
 		(uuid "0c85897b-63ce-4abc-a2f2-7f6e563a7c4d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3774 106.68 0)
+			(at 170.3774 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1494,24 +1745,24 @@
 			)
 		)
 	)
-	(global_label "B34_L13+"
+	(global_label "B34_L15+"
 		(shape bidirectional)
-		(at 184.15 88.9 180)
+		(at 156.21 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "0f2c7a7f-af6c-4304-9445-7106feb442e7")
+		(uuid "153bd3d8-7ad4-40fd-9080-d9c1257b30f3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3774 88.9 0)
+			(at 169.9826 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -1540,7 +1791,7 @@
 	)
 	(global_label "B34_L21+"
 		(shape bidirectional)
-		(at 184.15 96.52 180)
+		(at 184.15 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1550,7 +1801,7 @@
 		)
 		(uuid "3db56fa0-065b-45e7-a293-8ee117c10d1d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3774 96.52 0)
+			(at 171.7305 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1582,9 +1833,31 @@
 			)
 		)
 	)
+	(global_label "B34_L17+"
+		(shape bidirectional)
+		(at 156.21 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6816d185-6f75-4918-97d1-43464ccd350b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.9826 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "B34_L21-"
 		(shape bidirectional)
-		(at 184.15 99.06 180)
+		(at 184.15 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1594,7 +1867,7 @@
 		)
 		(uuid "7a85d793-eaf8-4a3f-823a-f73aeaa470f0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3774 99.06 0)
+			(at 170.3774 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1617,6 +1890,28 @@
 		(uuid "861ece21-b6f6-41d5-ac1c-d8fe1e174509")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 111.8424 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B34_L17-"
+		(shape bidirectional)
+		(at 156.21 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9411365b-f215-416f-aba2-3f8c1d56aed2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.9826 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1650,7 +1945,7 @@
 	)
 	(global_label "B34_L17-"
 		(shape bidirectional)
-		(at 184.15 114.3 180)
+		(at 184.15 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1660,12 +1955,34 @@
 		)
 		(uuid "a129e9a7-cfcf-40e2-af59-048bec7ffec8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3774 114.3 0)
+			(at 170.3774 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CLK_SYNC"
+		(shape output)
+		(at 156.21 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba22ea64-6d94-4f38-b38b-7c25c2843907")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.9826 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -1692,9 +2009,9 @@
 			)
 		)
 	)
-	(global_label "B34_L17+"
-		(shape bidirectional)
-		(at 184.15 111.76 180)
+	(global_label "CLK_SYNC"
+		(shape output)
+		(at 184.15 114.3 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1702,9 +2019,9 @@
 			)
 			(justify right)
 		)
-		(uuid "d58029cf-45ec-495a-b575-648b945c208a")
+		(uuid "dc978d2c-7573-4be6-a154-6d006dda287a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 170.3774 111.76 0)
+			(at 170.3774 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1736,7 +2053,7 @@
 			)
 		)
 	)
-	(global_label "B34_L15+"
+	(global_label "B34_L17+"
 		(shape bidirectional)
 		(at 184.15 104.14 180)
 		(fields_autoplaced yes)
@@ -1746,9 +2063,97 @@
 			)
 			(justify right)
 		)
-		(uuid "fdee4ecb-3c1f-4252-b469-2aa2ade045eb")
+		(uuid "e98dbe1d-b98f-47b9-a09c-135cf31f565a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 170.3774 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B34_L21-"
+		(shape bidirectional)
+		(at 156.21 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ed74aa38-ffef-48c9-8784-a08833400e77")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.9826 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B34_L15-"
+		(shape bidirectional)
+		(at 156.21 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f7a07963-5144-43c5-b0ba-309749b5599c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 169.9826 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B34_L21+"
+		(shape bidirectional)
+		(at 156.21 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fdbf854d-e70b-45cb-b1b3-9dfe427d66ab")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 168.6295 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B34_L15+"
+		(shape bidirectional)
+		(at 184.15 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fdee4ecb-3c1f-4252-b469-2aa2ade045eb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 170.3774 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1978,6 +2383,91 @@
 		)
 	)
 	(symbol
+		(lib_id "lib:uni_tvs")
+		(at 153.67 114.3 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28539ef5-3700-4ffe-9487-f25ae53f847b")
+		(property "Reference" "D10"
+			(at 150.876 113.284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 153.924 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib:TVS_0402_1005Metric"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "9.2V (Typ) Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount 0402/2DFN (1x0.60)"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "LITTLEFUSE"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SP0402U-ULC-01ETG"
+			(at 153.67 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f8749b3e-3c99-44d8-aaac-8720c3e457cb")
+		)
+		(pin "1"
+			(uuid "8b78d94e-dbcb-45fb-8509-bc5f25ba83cf")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 96.52 76.2 180)
 		(unit 1)
@@ -2044,7 +2534,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 191.77 111.76 90)
+		(at 191.77 114.3 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2052,7 +2542,7 @@
 		(dnp no)
 		(uuid "38bdf7b2-7412-41a4-a232-f4cca7685e78")
 		(property "Reference" "R135"
-			(at 189.738 110.744 90)
+			(at 189.738 113.284 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2061,7 +2551,7 @@
 			)
 		)
 		(property "Value" "100"
-			(at 194.056 110.744 90)
+			(at 194.056 113.284 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2070,7 +2560,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 191.77 111.76 0)
+			(at 191.77 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2079,7 +2569,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 191.77 111.76 0)
+			(at 191.77 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2088,7 +2578,7 @@
 			)
 		)
 		(property "Description" "100 Ohms ±1% 0.2W, 1/5W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
-			(at 191.77 111.76 0)
+			(at 191.77 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2097,7 +2587,7 @@
 			)
 		)
 		(property "M" "VISHAY"
-			(at 191.77 111.76 90)
+			(at 191.77 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2106,7 +2596,7 @@
 			)
 		)
 		(property "MPN" "CRCW0402100RFKEDHP"
-			(at 191.77 111.76 90)
+			(at 191.77 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2130,6 +2620,91 @@
 		)
 	)
 	(symbol
+		(lib_id "lib:uni_tvs")
+		(at 153.67 88.9 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "41442f6c-f6d6-4462-8532-53bd769ec882")
+		(property "Reference" "D4"
+			(at 151.13 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 153.924 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib:TVS_0402_1005Metric"
+			(at 153.67 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "9.2V (Typ) Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount 0402/2DFN (1x0.60)"
+			(at 153.67 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "LITTLEFUSE"
+			(at 153.67 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SP0402U-ULC-01ETG"
+			(at 153.67 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "991f6031-e83f-4f39-a0ab-6cf945d12993")
+		)
+		(pin "1"
+			(uuid "54d0b338-6b6f-459e-8e91-ac7d0083baf6")
+		)
+		(instances
+			(project ""
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 191.77 88.9 90)
 		(unit 1)
@@ -2137,7 +2712,7 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "39e0b6d4-220a-428e-a1a0-2fcbba62e8d3")
+		(uuid "47ae52c5-ab3a-4663-bbeb-a3c233210b6a")
 		(property "Reference" "R129"
 			(at 189.738 87.884 90)
 			(effects
@@ -2202,102 +2777,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f273d836-7713-41a4-8725-82f4d63cc066")
+			(uuid "a08d3904-89c5-46b3-9514-0910e27fd9f2")
 		)
 		(pin "2"
-			(uuid "cacc736c-a1c1-4996-986e-629025d2c328")
+			(uuid "ee56b3bd-3389-442d-a3fb-f5bc63ce24fd")
 		)
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
 					(reference "R129")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 191.77 114.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4a9387a9-d1c3-4f71-8502-f56fa25861e5")
-		(property "Reference" "R136"
-			(at 189.738 113.284 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100"
-			(at 194.056 113.284 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 191.77 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 191.77 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100 Ohms ±1% 0.2W, 1/5W Chip Resistor 0402 (1005 Metric) Automotive AEC-Q200, Pulse Withstanding Thick Film"
-			(at 191.77 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "M" "VISHAY"
-			(at 191.77 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW0402100RFKEDHP"
-			(at 191.77 114.3 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e4f3d5bf-6c26-4a6d-89f6-ab9919453f91")
-		)
-		(pin "2"
-			(uuid "cf73b30a-0239-4f21-85ad-e4611170d718")
-		)
-		(instances
-			(project "adc_board_prot"
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
-					(reference "R136")
 					(unit 1)
 				)
 			)
@@ -2363,6 +2851,91 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
 					(reference "#PWR0240")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lib:uni_tvs")
+		(at 153.67 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "51dd2a3e-9992-461d-9a98-a261d411120d")
+		(property "Reference" "D5"
+			(at 151.13 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 153.924 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib:TVS_0402_1005Metric"
+			(at 153.67 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "9.2V (Typ) Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount 0402/2DFN (1x0.60)"
+			(at 153.67 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "LITTLEFUSE"
+			(at 153.67 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SP0402U-ULC-01ETG"
+			(at 153.67 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8b3fcdd9-445c-47e0-adc0-a99173beebb8")
+		)
+		(pin "1"
+			(uuid "00717896-5705-4d8c-8bf0-b37d774e990f")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -2645,6 +3218,91 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lib:uni_tvs")
+		(at 153.67 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fae7947-b45d-4268-b43d-02d2f340a187")
+		(property "Reference" "D8"
+			(at 151.13 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 153.924 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib:TVS_0402_1005Metric"
+			(at 153.67 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "9.2V (Typ) Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount 0402/2DFN (1x0.60)"
+			(at 153.67 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "LITTLEFUSE"
+			(at 153.67 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SP0402U-ULC-01ETG"
+			(at 153.67 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3768f39d-b847-4f6c-8fb6-e2673e20d4c1")
+		)
+		(pin "1"
+			(uuid "6cf227fa-dcbd-438e-abd8-68087c046220")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -2935,16 +3593,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 204.47 93.98 270)
+		(at 147.32 114.3 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bb4ed9b1-6fb0-4495-8220-94c32be42946")
-		(property "Reference" "#PWR0251"
-			(at 198.12 93.98 0)
+		(uuid "c43f0027-36c4-4aab-a31a-599dcfbcddf7")
+		(property "Reference" "#PWR0262"
+			(at 140.97 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2953,7 +3611,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 199.136 93.98 90)
+			(at 142.24 114.3 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2961,7 +3619,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 93.98 0)
+			(at 147.32 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2970,7 +3628,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 204.47 93.98 0)
+			(at 147.32 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2979,7 +3637,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 204.47 93.98 0)
+			(at 147.32 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2988,12 +3646,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f576bf87-171d-4a35-98da-2e3fc5053275")
+			(uuid "b8e2f377-fa66-4c88-8b9c-78daabaa958f")
 		)
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
-					(reference "#PWR0251")
+					(reference "#PWR0262")
 					(unit 1)
 				)
 			)
@@ -3174,6 +3832,91 @@
 		)
 	)
 	(symbol
+		(lib_id "lib:uni_tvs")
+		(at 153.67 106.68 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d55ca465-d002-4847-920d-4d26141f1307")
+		(property "Reference" "D9"
+			(at 150.876 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 153.924 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib:TVS_0402_1005Metric"
+			(at 153.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "9.2V (Typ) Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount 0402/2DFN (1x0.60)"
+			(at 153.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "LITTLEFUSE"
+			(at 153.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SP0402U-ULC-01ETG"
+			(at 153.67 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "65cee6b3-86e3-485e-a1b6-35f3d39e8322")
+		)
+		(pin "1"
+			(uuid "d51defcc-d10b-495d-848f-265d36e325ed")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 104.14 99.06 90)
 		(unit 1)
@@ -3233,6 +3976,72 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
 					(reference "#PWR0258")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 204.47 93.98 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d7d84c16-9658-4034-b268-9fa78ccc83ed")
+		(property "Reference" "#PWR0251"
+			(at 198.12 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.136 93.98 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ffedb328-80b5-459f-b92f-f1f05733c742")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
+					(reference "#PWR0251")
 					(unit 1)
 				)
 			)
@@ -3522,6 +4331,91 @@
 		)
 	)
 	(symbol
+		(lib_id "lib:uni_tvs")
+		(at 153.67 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f062f4b5-55b1-4527-83b7-b9572e9a2192")
+		(property "Reference" "D7"
+			(at 151.13 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 153.924 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib:TVS_0402_1005Metric"
+			(at 153.67 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "9.2V (Typ) Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount 0402/2DFN (1x0.60)"
+			(at 153.67 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "LITTLEFUSE"
+			(at 153.67 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SP0402U-ULC-01ETG"
+			(at 153.67 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "872fd6ee-c3f6-4eb2-9070-9d17303bfa7f")
+		)
+		(pin "1"
+			(uuid "912ed24c-0c33-4e0c-ae1a-a25c6acaef3a")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:DA15_Pins_MountingHoles")
 		(at 212.09 96.52 0)
 		(unit 1)
@@ -3651,6 +4545,91 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "lib:uni_tvs")
+		(at 153.67 96.52 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f73e5e7d-4e41-43c7-b868-d6d4f9fa7639")
+		(property "Reference" "D6"
+			(at 151.13 95.504 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 153.924 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "lib:TVS_0402_1005Metric"
+			(at 153.67 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "9.2V (Typ) Clamp 2A (8/20µs) Ipp Tvs Diode Surface Mount 0402/2DFN (1x0.60)"
+			(at 153.67 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "M" "LITTLEFUSE"
+			(at 153.67 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SP0402U-ULC-01ETG"
+			(at 153.67 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2ae26ff0-05e9-4ca2-8e5d-480bbbe8f770")
+		)
+		(pin "1"
+			(uuid "50d0625f-8dc0-4b30-92da-d3968cd442f9")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
 		(at 238.76 17.78)
 		(size 16.51 12.7)
@@ -3688,7 +4667,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
-					(page "22")
+					(page "5")
 				)
 			)
 		)
@@ -3730,7 +4709,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
-					(page "21")
+					(page "4")
 				)
 			)
 		)
@@ -3772,7 +4751,7 @@
 		(instances
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc"
-					(page "20")
+					(page "3")
 				)
 			)
 		)
