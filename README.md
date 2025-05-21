@@ -25,7 +25,7 @@ The 4 Channel ADC Module is designed by NOIRLab to provide high-precision analog
 The schematic is organized into multiple sheets:
 
 - **Top-level** (`adc_board_prot.kicad_sch`): Power distribution, converter interconnections, FTDI, connectors, Ethernet, and miscellaneous blocks.
-- **ADC Front-End** (`converters/adc_0/adc.kicad_sch`): Four-channel ADC converter schematic featuring ADA4945-1 fully differential, low-noise, low-distortion amplifiers for input buffering and anti-alias filtering; REFBUF-based reference buffering; VCM common-mode generation; and LTC2387-18 18‑bit ADCs providing differential LVDS outputs and two-line test pattern functionality.
+- **ADC Front-End** (`converters/adc_0/adc.kicad_sch`): Four-channel ADC converter schematic featuring ADA4898, ultralow noise and distortion operational amplifier; ADA4945-1 fully differential, low-noise, low-distortion amplifiers for input buffering and anti-alias filtering; REFBUF-based reference buffering; VCM common-mode generation; and LTC2387-18 18‑bit ADCs providing differential LVDS outputs and two-line test pattern functionality.
 - **FTDI Interface** (`FTDI/ftdi.kicad_sch`): FT2232HL-based USB-to-UART and JTAG/UART multiplexing.
 - **Ethernet Interface** (`ethernet/ethernet.kicad_sch`): RJ45 connectors with included magnetics for network connectivity.
 - **Connectors** (`connectors/b2b_jb1/`, `connectors/b2b_jb2/`, `connectors/b2b_jb3/`): Board-to-board connectors mapping to FPGA modules.
