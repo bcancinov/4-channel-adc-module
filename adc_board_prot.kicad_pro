@@ -72,15 +72,11 @@
           ""
         ],
         [
-          "footprint_type_mismatch|72700000|54772500|e9b83ffc-8f8c-45be-8359-2d1c3bfc393c|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "silk_edge_clearance|132190000|160350000|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|bb17fb83-2c8c-4ca2-90a6-0bc629e52e15",
           ""
         ],
         [
-          "silk_edge_clearance|132191375|12360000|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|272b236f-154c-4797-b97c-8afdd1bd7854",
+          "silk_edge_clearance|132191193|-10670000|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|272b236f-154c-4797-b97c-8afdd1bd7854",
           ""
         ],
         [
@@ -88,19 +84,15 @@
           ""
         ],
         [
-          "silk_edge_clearance|171331375|12360000|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|29516663-89a5-4957-9760-c8292e470753",
+          "silk_edge_clearance|171331193|-10670000|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|29516663-89a5-4957-9760-c8292e470753",
           ""
         ],
         [
-          "silk_edge_clearance|70075000|20735000|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|c1d238c3-b5a2-4777-b34b-9c91a4543ebd",
+          "silk_edge_clearance|74900000|58052500|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|718c6edc-f661-419a-adb9-93ffab22cc96",
           ""
         ],
         [
-          "silk_edge_clearance|70075000|20735000|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|f1ca3a7d-6f72-4e5f-9fe6-2c4101e14a50",
-          ""
-        ],
-        [
-          "silk_edge_clearance|70075000|36665000|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|191ef9e7-296a-4ff6-bdd7-1520b393f662",
+          "silk_edge_clearance|74900000|66992500|2fbe765a-c92c-47ce-8e81-7c58cdd1bcdd|cc43e2af-8f1b-44d9-bf7e-3df8eac9db3a",
           ""
         ]
       ],
@@ -956,16 +948,20 @@
       "12VIN"
     ],
     [
-      "cf5edaa6-938f-44f3-a036-5579ffe5180c",
-      "+15VA"
-    ],
-    [
-      "27065efc-1803-4089-8660-920494512b66",
-      "-15VA"
+      "3ef669a6-8784-46cc-88a6-73e9c95cd39e",
+      "3V3D"
     ],
     [
       "d09bb773-d31c-4e2e-a3e1-4824585fef4b",
       "5V5A"
+    ],
+    [
+      "f4eff90e-f000-4df4-9020-ff089a2bfda7",
+      "+15V5A"
+    ],
+    [
+      "aff68d9f-c071-41d7-bb2e-334f2c07921e",
+      "-15V5A"
     ],
     [
       "7e1914fe-6890-4e71-b744-62a7ed99835a",
@@ -980,12 +976,16 @@
       "2V5D"
     ],
     [
-      "3ef669a6-8784-46cc-88a6-73e9c95cd39e",
-      "3V3D"
-    ],
-    [
       "2e7609ae-89ed-42bb-b44a-acd5aef22fe0",
       "4V2A"
+    ],
+    [
+      "cf5edaa6-938f-44f3-a036-5579ffe5180c",
+      "+15VA"
+    ],
+    [
+      "27065efc-1803-4089-8660-920494512b66",
+      "-15VA"
     ]
   ],
   "text_variables": {}
