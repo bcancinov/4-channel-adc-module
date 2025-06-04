@@ -7,7 +7,7 @@ This repository contains the schematic design for a **4 Channel ADC Module** dev
 ## Overview
 
 The 4 Channel ADC Module is designed by NOIRLab to provide high-precision analog-to-digital conversion for scientific instrumentation. It features:
-- Board dimensions: 169.57 × 171.02 mm; six-layer PCB with impedance control
+- Board dimensions: 162.03 × 171.02 mm; six-layer PCB with impedance control
 - Simulation files in `sim/` folder: LTSpice schematics and LTPowerCAD models for the DC‑DC converter stages
 
 

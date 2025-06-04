@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-05-21")
+		(date "2025-06-03")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -2042,7 +2042,7 @@
 	)
 	(global_label "-15VA_PG"
 		(shape input)
-		(at 83.82 96.52 180)
+		(at 83.82 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2052,7 +2052,7 @@
 		)
 		(uuid "015edd1b-d7c2-45d6-8188-a80e5be2c424")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.731 96.52 0)
+			(at 72.5496 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +2064,7 @@
 	)
 	(global_label "5VA_EN"
 		(shape output)
-		(at 134.62 88.9 180)
+		(at 134.62 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2074,7 +2074,7 @@
 		)
 		(uuid "08206406-04f7-42b9-91a1-260e9400d520")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.3496 88.9 0)
+			(at 121.9586 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2086,7 +2086,7 @@
 	)
 	(global_label "2V5A_EN"
 		(shape output)
-		(at 134.62 104.14 180)
+		(at 134.62 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2096,7 +2096,7 @@
 		)
 		(uuid "10535f4e-9eb5-4a0e-84b3-e037d2f8a508")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.5915 104.14 0)
+			(at 122.0191 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2130,7 +2130,7 @@
 	)
 	(global_label "2V5D_PG"
 		(shape input)
-		(at 83.82 106.68 180)
+		(at 83.82 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2140,7 +2140,7 @@
 		)
 		(uuid "1b47dd11-7579-417b-89e0-fccfeacf4277")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 69.9491 106.68 0)
+			(at 72.731 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2218,7 +2218,7 @@
 	)
 	(global_label "5VA_PG"
 		(shape input)
-		(at 83.82 88.9 180)
+		(at 83.82 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2228,7 +2228,7 @@
 		)
 		(uuid "3110230a-ced7-4b1b-a304-1d0afa0069c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.5496 88.9 0)
+			(at 71.1586 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2240,7 +2240,7 @@
 	)
 	(global_label "5VA_PG"
 		(shape input)
-		(at 134.62 86.36 180)
+		(at 134.62 78.74 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2250,7 +2250,7 @@
 		)
 		(uuid "3729eaf1-4997-4506-9e17-ab512dd932d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.1724 86.36 0)
+			(at 120.8096 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2262,7 +2262,7 @@
 	)
 	(global_label "2V5A_PG"
 		(shape input)
-		(at 134.62 101.6 180)
+		(at 134.62 93.98 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2272,7 +2272,7 @@
 		)
 		(uuid "37b5a26c-33cf-4745-957c-c689895dac4d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.531 101.6 0)
+			(at 119.6 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2328,7 +2328,7 @@
 	)
 	(global_label "-15VA_EN"
 		(shape output)
-		(at 134.62 96.52 180)
+		(at 134.62 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2338,7 +2338,7 @@
 		)
 		(uuid "49a78044-1b71-4be9-9f3f-c69a89c3ca7c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 122.0191 96.52 0)
+			(at 123.3496 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2372,7 +2372,7 @@
 	)
 	(global_label "4V2A_EN"
 		(shape output)
-		(at 134.62 63.5 180)
+		(at 134.62 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2382,7 +2382,7 @@
 		)
 		(uuid "4e281de7-015b-4d58-a7bd-afe2deac1aed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.3496 63.5 0)
+			(at 123.5915 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2460,7 +2460,7 @@
 	)
 	(global_label "4V2A_PG"
 		(shape input)
-		(at 134.62 66.04 180)
+		(at 134.62 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2470,7 +2470,7 @@
 		)
 		(uuid "790ba658-ce22-45dc-b29d-7e73c24a96cf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.531 66.04 0)
+			(at 123.531 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2482,7 +2482,7 @@
 	)
 	(global_label "-15VA_PG"
 		(shape input)
-		(at 134.62 93.98 180)
+		(at 134.62 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2492,7 +2492,7 @@
 		)
 		(uuid "7fd135b8-1c28-439d-afa8-ee89efe7062d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.6 93.98 0)
+			(at 121.1724 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2526,7 +2526,7 @@
 	)
 	(global_label "15VA_PG"
 		(shape input)
-		(at 134.62 78.74 180)
+		(at 134.62 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2536,7 +2536,7 @@
 		)
 		(uuid "88af4bef-6efc-4a0d-a252-067ca676ae71")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 120.8096 78.74 0)
+			(at 121.9586 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2592,7 +2592,7 @@
 	)
 	(global_label "4V2A_PG"
 		(shape input)
-		(at 83.82 86.36 180)
+		(at 83.82 91.44 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2602,7 +2602,7 @@
 		)
 		(uuid "9694e96a-e964-46b5-b1a0-463396f9a67e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.731 86.36 0)
+			(at 72.731 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2614,7 +2614,7 @@
 	)
 	(global_label "2V5A_PG"
 		(shape input)
-		(at 83.82 91.44 180)
+		(at 83.82 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2624,7 +2624,7 @@
 		)
 		(uuid "9bbe10fd-587f-4cbb-b3f7-accc129a4bf2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 72.731 91.44 0)
+			(at 72.731 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2724,7 +2724,7 @@
 	)
 	(global_label "2V5D_EN"
 		(shape output)
-		(at 134.62 73.66 180)
+		(at 134.62 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2734,7 +2734,7 @@
 		)
 		(uuid "d6e0647a-c33e-4d48-a7cc-8da43d7c082e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 118.3905 73.66 0)
+			(at 123.531 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2878,7 +2878,7 @@
 	)
 	(global_label "2V5D_PG"
 		(shape input)
-		(at 134.62 71.12 180)
+		(at 134.62 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2888,7 +2888,7 @@
 		)
 		(uuid "f556f75d-40cd-4793-b900-a7e506099864")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.9586 71.12 0)
+			(at 123.3496 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2900,7 +2900,7 @@
 	)
 	(global_label "15VA_PG"
 		(shape input)
-		(at 83.82 93.98 180)
+		(at 83.82 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2910,7 +2910,7 @@
 		)
 		(uuid "f5b9d2a0-24b7-43e4-8182-a1f4fa53403e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.1586 93.98 0)
+			(at 69.9491 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2922,7 +2922,7 @@
 	)
 	(global_label "15VA_EN"
 		(shape output)
-		(at 134.62 81.28 180)
+		(at 134.62 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2932,7 +2932,7 @@
 		)
 		(uuid "fa1badf2-52e2-4fec-9666-db23262b4538")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 121.9586 81.28 0)
+			(at 118.3905 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)

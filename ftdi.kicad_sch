@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-05-21")
+		(date "2025-06-03")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -5703,7 +5703,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 2d55e5aa-12bb-43ab-a220-4116fc2ab36b)
+			(uuid ab076651-dfdd-48da-8e0c-0a665b12031a)
 		)
 	)
 	(netclass_flag ""
