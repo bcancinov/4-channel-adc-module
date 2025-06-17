@@ -52,10 +52,6 @@ The complete schematic is available as a PDF:
 
 * [Download the schematic (PDF)](./adc_board_prot.pdf)
 
-For quick reference, a block‑diagram of the 4‑channel topology is shown below:
-
-![Block Diagram of ADC Module](./images/block_diagram.png)
-
 ## User Manual
 
 A detailed manual covering module description, power rails, front‑end design, and connectors can be found here:
