@@ -1,0 +1,60 @@
+
+\begin{tikzpicture}[
+    %=== 1) All the style definitions go here instead of \tikzset in the preamble ===
+    block/.style={
+    draw,
+    rectangle,
+    align=center,
+    minimum width=3cm,
+    minimum height=1.2cm,
+    line width=0.4mm
+    },
+    blockLarge/.style={
+    draw,
+    rectangle,
+    align=center,
+    minimum width=3cm,
+    minimum height=3cm,
+    line width=0.4mm
+    },
+    blockSmall/.style={
+    draw,
+    rectangle,
+    align=center,
+    minimum width=2cm,
+    minimum height=0.8cm,
+    line width=0.4mm
+    },
+    node distance=6mm and 10mm
+]
+%
+% Top row
+\node[block] (digital_dcdc)    [minimum height=2cm]{Digital\\DC‐DC};
+\node[block, anchor=north west] (backplane) at ($(digital_dcdc.north east)+(10mm,0)$) {Backplane\\Connector};
+\node[block, anchor=north west] (analog_dcdc)[minimum height=4cm] at ($(backplane.north east)+(10mm,0)$) {Analog\\DC‐DC};
+%
+
+\node[block] (clock)     [below=of backplane, minimum width = 3cm] {Clock Gen};
+
+\node[blockSmall] (eeprom)     [below=of clock, minimum width = 3cm, yshift=0.5cm] {EEPROM};
+%
+% Center block: Zynq SoC
+\node[blockLarge] (zynq)       [below=of eeprom, minimum height=4cm, yshift=0.5cm] {Zynq 7020\\SoC-Module};
+%
+% Left side, middle
+\node[block] (gbe)             [below=of digital_dcdc, yshift=0mm] {Gigabit\\Ethernet};
+\node[block] (ftdi)            [below=of gbe] {FTDI};
+
+% Bottom‐center row: ADC + Frontend
+\node[block] (adc)             [below=of zynq, minimum height=4cm] {4~x~ADC\\+ Frontend};
+%
+% Bottommost: Input Connector
+\node[blockSmall] (input)      [below=of adc, minimum width = 3cm] {Video Input\\Connector};
+
+\node[block] (analog_ldo)      [right=of adc, minimum height=4cm] {Analog\\LDO};
+\node[block, anchor=north east] (digital_ldo) at ($(adc.north west)+(-10mm,0)$) {Digital\\LDO};
+% \node[block] (digital_ldo)     [left=of adc] {Digital\\LDO};
+
+\node[draw,black,rectangle,fit=(digital_dcdc)(analog_dcdc)(input),inner xsep=6mm, inner ysep=0mm,line width=0.4mm] (border) {};
+
+\end{tikzpicture}

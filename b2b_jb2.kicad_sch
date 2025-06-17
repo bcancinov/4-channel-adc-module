@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-06-03")
+		(date "2025-06-14")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -2737,7 +2737,7 @@
 		(at 107.95 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7c9ef3b7-cb54-49eb-84bd-7ebbcc6d5bce")
+		(uuid "b2d4d7ac-5eb2-4445-8a55-04a223eb063d")
 	)
 	(junction
 		(at 189.23 35.56)
@@ -3003,6 +3003,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 30.48) (xy 109.22 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d4684aa-a3f6-4db1-82a9-ab011349bec9")
+	)
+	(wire
+		(pts
 			(xy 190.5 33.02) (xy 189.23 33.02)
 		)
 		(stroke
@@ -3083,16 +3093,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 33.02) (xy 107.95 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67e8efa4-7ef8-4024-984a-9c3566dcb6e2")
-	)
-	(wire
-		(pts
 			(xy 95.25 154.94) (xy 109.22 154.94)
 		)
 		(stroke
@@ -3120,6 +3120,16 @@
 			(type default)
 		)
 		(uuid "82887dca-ad5c-46e0-a078-78a6fd653e74")
+	)
+	(wire
+		(pts
+			(xy 107.95 33.02) (xy 107.95 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "862b5739-e842-4561-bc51-c3a9316d6f27")
 	)
 	(wire
 		(pts
@@ -3163,13 +3173,13 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 30.48) (xy 109.22 30.48)
+			(xy 109.22 33.02) (xy 107.95 33.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b6fbb303-4ccb-48f0-9c9d-e4760e21a4d1")
+		(uuid "b60013b8-be4c-4017-8165-7bab243408d6")
 	)
 	(wire
 		(pts
@@ -3180,16 +3190,6 @@
 			(type default)
 		)
 		(uuid "b80825ca-b51d-458e-bbeb-3863f425acbb")
-	)
-	(wire
-		(pts
-			(xy 107.95 33.02) (xy 107.95 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb831496-d2aa-44fb-a843-d9c68c38d526")
 	)
 	(wire
 		(pts
@@ -4192,6 +4192,71 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/581c055b-9176-4878-9dfb-922067a56523"
 					(reference "#PWR0166")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 107.95 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "399b3579-edb3-4890-bb64-7e77a4cb5b90")
+		(property "Reference" "#PWR0289"
+			(at 111.76 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "2V5D"
+			(at 101.854 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 107.95 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86970851-3332-4636-a028-90ea830d58b8")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/581c055b-9176-4878-9dfb-922067a56523"
+					(reference "#PWR0289")
 					(unit 1)
 				)
 			)
@@ -5742,73 +5807,6 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/581c055b-9176-4878-9dfb-922067a56523"
 					(reference "#PWR0159")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 107.95 30.48 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "edda53bb-a16a-434a-878c-799442f8a642")
-		(property "Reference" "#PWR0146"
-			(at 111.76 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "3V3D_OUT"
-			(at 104.14 30.4799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 107.95 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "df86008b-0a7e-44ed-8e8b-270524149524")
-		)
-		(instances
-			(project "adc_board_prot"
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/581c055b-9176-4878-9dfb-922067a56523"
-					(reference "#PWR0146")
 					(unit 1)
 				)
 			)

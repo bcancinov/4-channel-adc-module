@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "4 channel ADC Module")
-		(date "2025-06-03")
+		(date "2025-06-14")
 		(rev "0.1")
 		(company "NOIRLab")
 		(comment 1 "Design: Braulio Cancino Vera - braulio.cancino@noirlab.edu")
@@ -1389,7 +1389,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
+		(symbol "power:+12V"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -1410,7 +1410,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3V3"
+			(property "Value" "+12V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -1436,7 +1436,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1454,7 +1454,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3V3_0_1"
+			(symbol "+12V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1492,7 +1492,7 @@
 					)
 				)
 			)
-			(symbol "+3V3_1_1"
+			(symbol "+12V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1618,7 +1618,7 @@
 	)
 	(text "MRCC: Multi-Region Clock Capable"
 		(exclude_from_sim no)
-		(at 240.03 95.504 0)
+		(at 239.014 95.504 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1637,12 +1637,6 @@
 		(uuid "6d08df33-3c7d-4ef5-940c-7fc962d333a7")
 	)
 	(junction
-		(at 101.6 86.36)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "19805e53-6944-4644-b932-59787378b6b4")
-	)
-	(junction
 		(at 101.6 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1653,6 +1647,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "550b302d-3cd6-433d-9dca-99dd5e7aa14d")
+	)
+	(junction
+		(at 101.6 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c6148d4-68eb-46a2-bb04-8cf7a91c73f0")
 	)
 	(junction
 		(at 101.6 96.52)
@@ -1707,10 +1707,6 @@
 		(uuid "4c202455-c335-4f1f-86e9-a272b55ea88c")
 	)
 	(no_connect
-		(at 208.28 81.28)
-		(uuid "59d3222c-5494-461e-a4c8-d1764737727c")
-	)
-	(no_connect
 		(at 134.62 119.38)
 		(uuid "5e1b5bdf-f716-4498-b075-ba0c6c3cc9ee")
 	)
@@ -1741,10 +1737,6 @@
 	(no_connect
 		(at 134.62 116.84)
 		(uuid "dd3537be-a9df-441b-8030-80868db8593e")
-	)
-	(no_connect
-		(at 208.28 78.74)
-		(uuid "e5c8ba22-7b90-48c3-9114-9a4dd41e0d7c")
 	)
 	(no_connect
 		(at 134.62 124.46)
@@ -1982,6 +1974,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.6 83.82) (xy 101.6 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc359cf4-a16a-4364-8b2c-00da236e5e75")
+	)
+	(wire
+		(pts
 			(xy 83.82 96.52) (xy 90.17 96.52)
 		)
 		(stroke
@@ -2194,6 +2196,28 @@
 			)
 		)
 	)
+	(global_label "B34_L13-"
+		(shape input)
+		(at 208.28 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2c6563c9-e933-4c81-a82a-642fd0148c63")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.9413 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "3V3D_SYNC"
 		(shape output)
 		(at 208.28 63.5 0)
@@ -2282,8 +2306,8 @@
 			)
 		)
 	)
-	(global_label "B34_L15-"
-		(shape bidirectional)
+	(global_label "B34_M22"
+		(shape output)
 		(at 208.28 109.22 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2294,7 +2318,7 @@
 		)
 		(uuid "37e97237-9d1c-47b1-819c-0d685ff7513b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.0526 109.22 0)
+			(at 219.7922 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2304,8 +2328,8 @@
 			)
 		)
 	)
-	(global_label "B34_L10-"
-		(shape bidirectional)
+	(global_label "B34_L22"
+		(shape output)
 		(at 208.28 88.9 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2316,7 +2340,51 @@
 		)
 		(uuid "41fb873c-910f-463f-83b1-80233cf4ebf0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.0526 88.9 0)
+			(at 219.3689 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B34_L13+"
+		(shape input)
+		(at 208.28 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "44b54a5d-f102-4131-a72a-304e7bd56880")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.9413 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B34_P17"
+		(shape output)
+		(at 208.28 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "473b2c8e-ea25-4ece-9a6e-84572f1d3e04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.6108 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2348,9 +2416,9 @@
 			)
 		)
 	)
-	(global_label "B34_L21+"
-		(shape bidirectional)
-		(at 208.28 101.6 0)
+	(global_label "B34_T17"
+		(shape input)
+		(at 208.28 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2360,7 +2428,7 @@
 		)
 		(uuid "4de536a8-67ae-4a52-b5df-a3a527437699")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.0526 101.6 0)
+			(at 219.3084 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2392,28 +2460,6 @@
 			)
 		)
 	)
-	(global_label "B34_L13-"
-		(shape bidirectional)
-		(at 208.28 96.52 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5d1d3a80-c626-41b9-9ace-1ddb2afa756b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.0526 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "5V5A_EN"
 		(shape output)
 		(at 208.28 121.92 0)
@@ -2436,8 +2482,8 @@
 			)
 		)
 	)
-	(global_label "B34_L10+"
-		(shape bidirectional)
+	(global_label "B34_L21"
+		(shape output)
 		(at 208.28 86.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2448,7 +2494,7 @@
 		)
 		(uuid "6a6efb41-a834-425d-bf69-e9e7a3fc2466")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.0526 86.36 0)
+			(at 219.3689 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2568,28 +2614,6 @@
 			)
 		)
 	)
-	(global_label "B34_L13+"
-		(shape bidirectional)
-		(at 208.28 93.98 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "94d46a0a-cb96-445d-8c36-c35e6713035d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.0526 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "4V2A_PG"
 		(shape input)
 		(at 83.82 91.44 180)
@@ -2678,6 +2702,28 @@
 			)
 		)
 	)
+	(global_label "B34_P18"
+		(shape output)
+		(at 208.28 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a9da40c9-6762-4be9-8463-a833113189fc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.6108 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "-15V5A_EN"
 		(shape output)
 		(at 208.28 114.3 0)
@@ -2744,9 +2790,9 @@
 			)
 		)
 	)
-	(global_label "B34_L21-"
-		(shape bidirectional)
-		(at 208.28 104.14 0)
+	(global_label "B34_T16"
+		(shape input)
+		(at 208.28 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2756,7 +2802,7 @@
 		)
 		(uuid "dc1c1f39-15fa-4961-8d0f-0dd40d764d36")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.0526 104.14 0)
+			(at 219.3084 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2854,8 +2900,8 @@
 			)
 		)
 	)
-	(global_label "B34_L15+"
-		(shape bidirectional)
+	(global_label "B34_M21"
+		(shape input)
 		(at 208.28 106.68 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2866,7 +2912,7 @@
 		)
 		(uuid "f3d4081f-d63e-4ccb-a26e-03f1b71ab09d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 222.0526 106.68 0)
+			(at 219.7922 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3003,6 +3049,71 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/45f0a0f8-850f-42cf-978a-117b962875a8"
 					(reference "#PWR0173")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 101.6 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35440a0c-12f3-4dee-bf8c-3a4ec5abdcc5")
+		(property "Reference" "#PWR0290"
+			(at 101.6 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "2V5D"
+			(at 101.6 79.756 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 101.6 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb7a63be-7fc8-47c3-bd0e-8f686f259418")
+		)
+		(instances
+			(project "adc_board_prot"
+				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/45f0a0f8-850f-42cf-978a-117b962875a8"
+					(reference "#PWR0290")
 					(unit 1)
 				)
 			)
@@ -5007,72 +5118,6 @@
 			(project "adc_board_prot"
 				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/45f0a0f8-850f-42cf-978a-117b962875a8"
 					(reference "#PWR0168")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 101.6 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f4fdff8f-f846-4845-9d93-b7275fe1b7ca")
-		(property "Reference" "#PWR0167"
-			(at 101.6 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "3V3D_OUT"
-			(at 101.6 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 101.6 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "47520583-78a8-4c0a-992e-1c8ec6b6af80")
-		)
-		(instances
-			(project "adc_board_prot"
-				(path "/c6949a33-abae-4c95-a3fe-c6f7de9ef0a5/ee326142-a1ab-40dd-8d19-bfec08848fdc/45f0a0f8-850f-42cf-978a-117b962875a8"
-					(reference "#PWR0167")
 					(unit 1)
 				)
 			)

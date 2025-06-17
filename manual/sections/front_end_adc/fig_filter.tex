@@ -1,0 +1,10 @@
+\begin{tikzpicture}[scale=0.75, transform shape]
+    
+    \draw (0,0) node[ocirc]{} node[left]{$v_\text{in}^+$} to[R, l=$R_\text{filt}$] ++(2,0) node[circ]{} coordinate(rtop){} -- ++(0.5, 0) node[ocirc]{} node[right]{{$v_\text{out}^+$}};
+
+    \draw (0,-1) node[ocirc]{} node[left]{$v_\text{in}^-$} to[R, l_=$R_\text{filt}$] ++(2,0) node[circ]{} coordinate(rbot){} -- ++(0.5, 0) node[ocirc]{} node[right]{{$v_\text{out}^-$}};
+
+    \draw (rtop) to[C, l_ = $C_\text{filt}$] ++(0,2) node[ground, yscale = -1]{};
+    \draw (rbot) to[C, l = $C_\text{filt}$] ++(0,-2) node[ground, yscale = 1]{};
+
+\end{tikzpicture}

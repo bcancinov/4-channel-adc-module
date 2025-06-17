@@ -1,0 +1,24 @@
+\begin{tikzpicture}[scale=0.75, transform shape]
+    
+    \draw (0,0) node[fd op amp] (opamp){};
+
+    \draw (opamp.-) node[circ]{} -- ++(0,1) coordinate(opintop) node[circ]{};
+    \draw (opamp.+) node[circ]{} -- ++(0,-1) coordinate(opinbot) node[circ]{};
+
+    \draw (opamp.-) to[R, l_=$R_1$] ++(-2,0) node[ocirc]{} node[left]{$v_\text{in}^-$};
+    \draw (opamp.+) to[R, l=$R_1$] ++(-2,0) node[ocirc]{} node[left]{$v_\text{in}^+$};
+
+    \draw (opintop) to[R, l=$R_2$] (opintop -| opamp.out +) node[circ]{} -- (opamp.out +) node[circ]{};
+    \draw (opinbot) to[R, l_=$R_2$] (opinbot -| opamp.out -) node[circ]{} -- (opamp.out -) node[circ]{};
+
+    \draw (opintop) node[circ]{} -- ++(0,1.25) coordinate(rtop);
+    \draw (opinbot) node[circ]{} -- ++(0,-1.25) coordinate(rbot);
+    
+    \draw (rtop) to[C, l=$C_1$] (rtop -| opamp.out +) -- (opintop -| opamp.out +);
+    \draw (rbot) to[C, l_=$C_1$] (rbot -| opamp.out -) -- (opinbot -| opamp.out -);
+
+    \draw (opamp.out +) -- ++(0.5,0) node[ocirc]{} node[right]{$v_\text{out}^+$};
+    \draw (opamp.out -) -- ++(0.5,0) node[ocirc]{} node[right]{$v_\text{out}^-$};
+
+
+\end{tikzpicture}

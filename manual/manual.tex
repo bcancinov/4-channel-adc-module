@@ -1,0 +1,99 @@
+\documentclass[11pt,letterpaper]{article}
+
+%----------------------------
+%  Package Imports
+%----------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage[letterpaper,margin=25mm]{geometry}
+
+\usepackage{tgtermes}        % TeX Gyre Termes (Times‐like). Swap to 'tgpagella' for Palatino style, etc.
+
+% 2) Improve micro‐typography (protrusion + font expansion)
+\usepackage{microtype}
+
+% 3) Better “code” / monospaced font for any snippets
+\usepackage{inconsolata}     % a clean, professional monospace
+
+
+% 5) Slightly more vertical space between paragraphs (optional)
+\usepackage{parskip}         % removes paragraph indentation, adds small skip
+
+% 6) If you want “fancy” headers/footers (document title on the left, page number on the right, etc.)
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}                                  % clear all header/footer fields
+\fancyhead[L]{\small NOIRLab\\ 4‐Channel ADC Module Prototype}  % left header
+\fancyhead[R]{\small Version 0.1}           % right header
+\fancyfoot[C]{\small \thepage}              % centered footer
+
+% 7) For clickable, colored links in PDF
+\usepackage[hidelinks]{hyperref}
+
+
+% Math and symbols
+\usepackage{amsmath,amssymb,mathtools}
+
+% \usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{positioning, fit, calc}
+
+% Load siunitx for SI units:
+\usepackage{siunitx}
+\sisetup{detect-all}
+
+% define a general sqrt-unit macro:
+\newcommand{\sqrtunit}[1]{%
+  \ensuremath{%
+    \sqrt{\text{\si{#1}}}%
+  }%
+}
+
+% better tables
+\usepackage{booktabs}
+
+% Figures and captions
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% Hyperlinks and cross-referencing
+\usepackage[hidelinks]{hyperref}
+
+% Page geometry
+% \usepackage[a4paper,margin=2.5cm]{geometry}
+
+% Bibliography (if you cite datasheets or papers)
+\usepackage{cite}
+
+%----------------------------
+%  Document Begins
+%----------------------------
+\begin{document}
+
+% Title page
+\title{4-Channel ADC Module Prototype\\Module Description and Analysis}
+\author{Braulio Cancino Vera \\ National Optical-Infrared Astronomy Research Laboratory (NOIRLab)}
+\date{Version 0.1}
+\maketitle
+
+% Table of Contents (clickable)
+\tableofcontents
+\clearpage
+
+% Include each section in order
+\input{sections/introduction.tex}
+\input{sections/power.tex}
+\input{sections/clock_gen.tex}
+\input{sections/front_end_adc.tex}
+\input{sections/proc.tex}
+\input{sections/connectors.tex}
+\input{sections/misc.tex}
+
+% Bibliography (if needed)
+% \bibliographystyle{ieeetr}
+% \bibliography{bib/references}
+
+\end{document}

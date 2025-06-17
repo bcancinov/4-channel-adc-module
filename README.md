@@ -2,53 +2,86 @@
 
 **Version 0.1** – Prototype for revision and discussion
 
-This repository contains the schematic design for a **4 Channel ADC Module** developed in KiCad EDA version 9.0.0 citeturn0file0.
+This repository contains the schematic and supporting documentation for the **4 Channel ADC Module** prototype built in KiCad EDA v9.0.0.
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Repository Contents](#repository-contents)
+4. [Schematic](#schematic)
+5. [User Manual](#user-manual)
+6. [Usage](#usage)
+7. [Bill of Materials](#bill-of-materials)
+8. [License](#license)
+9. [Author](#author)
 
 ## Overview
 
-The 4 Channel ADC Module is designed by NOIRLab to provide high-precision analog-to-digital conversion for scientific instrumentation. It features:
-- Board dimensions: 162.03 × 171.02 mm; six-layer PCB with impedance control
-- Simulation files in `sim/` folder: LTSpice schematics and LTPowerCAD models for the DC‑DC converter stages
+The 4 Channel ADC Module is a daughterboard for Trenz TE0720 modules (Zynq™ 7020) designed by NOIRLab to provide high-precision analog-to-digital conversion. It features a multi‑rail power system, low‑noise analog front‑end, high‑speed SAR ADCs, clock synchronization, and both USB-C and Ethernet interfaces.
 
+## Features
 
-- Daughter PCB module of Tren Electronic TE0720-04-62I33MA SoC module with AMD Zynq™ 7020-2I, 1 GByte DDR3L, and 8 GByte eMMC
-- Minimal backplane design: synchronization clock, start, and error signals
-- Four differential input channels designed for **1 MHz sample rate**, using fully differential, low-noise, low-distortion ADA4945-1 amplifiers and LTC2387-18 18-bit ADCs for high-precision conversion
-- **USB-C port (USB 2.0) via FT2232HL for programming and serial communication**
-- **Jitter Attenuator** for clock synchronization via Si5342-D.
-- **Gigabit Ethernet connectivity via an RJ45 port with included magnetics**
-- **Multi-rail power management**: input 12 V VIN (protected by TI TPS259480AYWPR eFuse 3.5 V–23 V, 12.2 mΩ, 8 A bi‑directional); external output: ±15 V
+* **Dimensions:** 162 mm × 171 mm, six‑layer impedance‑controlled PCB
+* **ADC Front‑End:** Fully differential, low‑noise amplifiers (ADA4945‑1 & LTC2387‑18)
+* **Clock Gen:** Si5342‑D jitter attenuator for 10 MHz sync
+* **Interfaces:** USB‑C (FT2232HL), Gigabit Ethernet (RJ45)
+* **Power:** 12 V VIN protection, multi‑rail DC‑DC converters & LDOs
+* **Backplane:** Sync clock, start, error, power rails
 
+* `README.md` – This file
+* `BOM.csv` – Bill of Materials
+* `adc_board_prot.pdf` – Complete schematic PDF
+* `adc_board_prot.kicad_pro` – KiCad project file
+* `*.kicad_sch` – Schematic sheets (power, clock\_gen, adc, ftdi, ethernet, connectors, converters, misc, b2b\_jb1-3, power variants)
+* `*.kicad_pcb` – PCB layout file
+* `*.kicad_prl`, `*.kicad_prl` – PCB drill/paper list
+* `*.kicad_sym`, `lib.kicad_sym` – Symbol libraries
+* `lib.pretty/` – Footprint library
 
+Other directories:
 
-## Schematic Structure
+* `sim/` – LTSpice & LTPowerCAD simulations
+* `step/` – STEP model files
+* `docs/` – Documentation sources
+* `manual/` – User manual PDF
 
-The schematic is organized into multiple sheets:
+## Schematic
 
-- **Top-level** (`adc_board_prot.kicad_sch`): Power distribution, converter interconnections, FTDI, connectors, Ethernet, and miscellaneous blocks.
-- **Clock Gen** (`clock_gen.kicad_sch`): High-performance jitter attenuator Si5342-D for clock syncrhonization.
-- **ADC Front-End** (`adc.kicad_sch`): Four-channel ADC converter schematic featuring ADA4898, ultralow noise and distortion operational amplifier; ADA4945-1 fully differential, low-noise, low-distortion amplifiers for input buffering and anti-alias filtering; and LTC2387-18 18‑bit ADCs providing differential LVDS outputs and two-line test pattern functionality.
-- **FTDI Interface** (`ftdi.kicad_sch`): FT2232HL-based USB-to-UART and JTAG/UART multiplexing.
-- **Ethernet Interface** (`ethernet.kicad_sch`): RJ45 connectors with included magnetics for network connectivity.
-- **Connectors** (`b2b_jb1.kicad_sch`, `b2b_jb2.kicad_sch`, `b2b_jb3.kicad_sch`): Board-to-board connectors mapping to FPGA modules.
-- **Power Supply** (`power_*.kicad_sch`): Multi-rail power design including 12 VIN input, 5 V, 3.3 V, 2.5 V, 4.2 V, and ±15 V rails using TI and Linear regulators.
+The complete schematic is available as a PDF:
+
+* [Download the schematic (PDF)](./adc_board_prot.pdf)
+
+For quick reference, a block‑diagram of the 4‑channel topology is shown below:
+
+![Block Diagram of ADC Module](./images/block_diagram.png)
+
+## User Manual
+
+A detailed manual covering module description, power rails, front‑end design, and connectors can be found here:
+
+* [Read the user manual (PDF)](manual/manual.pdf)
 
 ## Usage
 
 1. Install [KiCad EDA 9.0.0](https://www.kicad.org).
-2. Open the project file `adc_board_prot.kicad_pro`.
+2. Open **adc\_board\_prot.kicad\_pro** in KiCad.
+3. Review schematic and BOM before fabrication.
+4. Use the manual for detailed functional descriptions and assembly notes.
 
 ## Bill of Materials
 
-A complete list of components and part numbers is provided in `BOM.csv`.
+A complete list of components and part numbers is provided in:
+
+* `BOM.csv`
 
 ## License
 
-This project is released under the **MIT License**. See `LICENSE` for details.
+This project is released under the **MIT License**.
 
 ## Author
 
-**Braulio Cancino Vera**\
-NOIRLab\
-[braulio.cancino@noirlab.edu](mailto\:braulio.cancino@noirlab.edu)\
-Date: April 18, 2025
+**Braulio Cancino Vera**
+NOIRLab
+[braulio.cancino@noirlab.edu](mailto:braulio.cancino@noirlab.edu)
+Date: June 17, 2025

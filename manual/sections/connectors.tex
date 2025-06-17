@@ -1,0 +1,75 @@
+\section{Connectors}
+
+\subsection{Backplane Connector}
+
+Backplane connector serves as the primary interface for power, control, and monitoring systems. It brings in an external \SI{12}{\volt} power rail to feed board DC-DC converters and \SI{3.3}{\volt} digital I/O like synchronization and interlocks. 
+
+Selected backplane connector is TE Connectivity 5747841-4 15-position D-Sub plug male pins connector. \autoref{tab:backplane} shows backplane connector pinout.
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{l c l c l}
+    \toprule
+    Pin name  & Pin no.     & Dir. & Level            & Description                                \\
+    \midrule
+    12VIN     & 7, 8, 15        & —    & \SI{12}{\volt}   & External power input                       \\[3pt]
+    BPI0      & 1               & In   & \SI{3.3}{\volt}  & 10\,\si{\mega\hertz} external sync clock  \\
+    BPI1      & 9               & In   & \SI{3.3}{\volt}  & Digital input                              \\
+    BPI2      & 10              & In   & \SI{3.3}{\volt}  & Digital input                              \\
+    BPI3      & 3               & In   & \SI{3.3}{\volt}  & Digital input                              \\[3pt]
+    BPO0      & 4               & Out  & \SI{3.3}{\volt}  & Digital output                             \\
+    BPO1      & 12              & Out  & \SI{3.3}{\volt}  & Digital output                             \\
+    BPO2      & 13              & Out  & \SI{3.3}{\volt}  & Digital output                             \\
+    BPO3      & 6               & Out  & \SI{3.3}{\volt}  & Digital output                             \\[3pt]
+    GND       & 0, 2, 5, 11, 14 & —    & \SI{0}{\volt}    & Ground return                              \\
+    \bottomrule
+  \end{tabular}
+  \caption{Backplane Connector Pinout}
+  \label{tab:backplane}
+\end{table}
+
+Backplane connector digital I/O signals are translated from \SI{3.3}{\volt} to \SI{2.5}{\volt} and then connected to \SI{2.5}{\volt} Zynq SoC-Module bank 34. For voltage translation we selected a Texas Instrument SN74AXC8T245QPWRQ1 automotive \SI{8}{\bit} \SI{380}{\mega bps} dual-supply bus transceiver with ESD protection.
+
+\subsection{USB-C Connector}
+
+USB-C connector is used to program through JTAG and communicate through USART with Zynq SoC-Module using a USB converter.
+
+Selected USB converter is FTDI FT2232HL USB Hi-Speed to Dual Channel Serial UART/FIFO/JTAG/SPI/I2C IC. FT2232HL \texttt{ADBUS} is used for JTAG and \texttt{BDBUS} us used for UART. UART \texttt{RXD} (Zynq to host) is connected to Zynq \texttt{MIO15} and \texttt{TXD} (host to Zynq) is connected to Zynq \texttt{MIO14}. 
+
+\subsection{Gigabit Ethernet Connector}
+
+Gigabit ethernet connector is RJ45 connector used for communication between Zynq SoC-Module Ethernet PHY and host for configuration, telemetry and video streaming.
+
+Selected Gigabit ethernet connector is Taoglas TMJG4820GENL industrial grade RJ45 connector with integrated magnetics 1G Base-T that features EMI finger and short body. Internal LEDs are disabled. 
+
+\subsection{Video Input Connector}
+
+Video input connector contains 4 differential video input pairs and also provides $\pm$\SI{15}{\volt} analog input to power external pre-amplifiers.
+
+Selected video input connector is TE Connectivity 5747841-4 15-position D-Sub plug male pins connector. \autoref{tab:video} shows video input connector pinout.
+
+\begin{table}[ht]
+  \centering
+  \begin{tabular}{l c l c l}
+    \toprule
+    Pin name  & Pin no.     & Dir. & Level            & Description                                \\
+    \midrule
+    +15VA 	& 1   	& Out  	& \SI{15}{\volt}   	& Analog power output          	\\
+    -15VA  	& 8 	& Out  	& \SI{-15}{\volt} 	& Analog power output  			\\[3pt]
+	
+	IN0+	& 10	& In	& $\pm$\SI{15}{\volt}					& Channel 0 Video Input +		\\
+	IN0-	& 2	    & In	& $\pm$\SI{15}{\volt}					& Channel 0 Video Input -		\\
+	IN1+	& 4	    & In	& $\pm$\SI{15}{\volt}					& Channel 1 Video Input +		\\
+	IN1-	& 11	& In	& $\pm$\SI{15}{\volt}					& Channel 1 Video Input -		\\
+	IN2+	& 13	& In	& $\pm$\SI{15}{\volt}					& Channel 2 Video Input +		\\
+	IN2-	& 5	    & In	& $\pm$\SI{15}{\volt}					& Channel 2 Video Input -		\\
+	IN3+	& 7	    & In	& $\pm$\SI{15}{\volt}					& Channel 3 Video Input +		\\
+	IN3-	& 14	& In	& $\pm$\SI{15}{\volt}					& Channel 3 Video Input -		\\[3pt]
+	
+    GND    	& 3, 6, 9, 12, 15 & —    & \SI{0}{\volt}    & Ground return  		\\
+
+    \bottomrule
+  \end{tabular}
+  \caption{Video Input Connector Pinout}
+  \label{tab:video}
+\end{table}
