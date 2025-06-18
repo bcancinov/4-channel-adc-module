@@ -54,6 +54,8 @@
 % better tables
 \usepackage{booktabs}
 
+\usepackage{multicol}
+
 % Figures and captions
 \usepackage{graphicx}
 \usepackage{caption}
@@ -85,12 +87,12 @@
 
 % Include each section in order
 \input{sections/introduction.tex}
-\input{sections/power.tex}
-\input{sections/clock_gen.tex}
-\input{sections/front_end_adc.tex}
-\input{sections/proc.tex}
-\input{sections/connectors.tex}
-\input{sections/misc.tex}
+\newpage\input{sections/power.tex}
+\newpage\input{sections/clock_gen.tex}
+\newpage\input{sections/front_end_adc.tex}
+\newpage\input{sections/proc.tex}
+\newpage\input{sections/connectors.tex}
+\newpage\input{sections/misc.tex}
 
 % Bibliography (if needed)
 % \bibliographystyle{ieeetr}
